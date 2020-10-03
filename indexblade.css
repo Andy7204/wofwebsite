@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+   max-width: 100%;
+}
+body {
+    background-color: #022140;
+    color: white;
+    font-family:  'Vollkorn', serif;
+}
+header {
+    background-image: url(/images/wof_tagline_banner.png);
+    height: 320px;
+    box-shadow: 0px 0px 15px 2px black;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    opacity: 0.9;
+}
+/* logo animnation */
+.logo img {
+    position: relative;
+    float: left;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    animation-name: sideboom;
+    animation-duration: 1s;
+}
+@keyframes sideboom {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+.frontext {
+    position: relative;
+    left: 15px;
+    height: 65px;
+    font-size: 17px;
+    font-family: 'Acme', sans-serif;
+    padding: 5px;
+    animation-name: boom;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.subtext {
+    font-size: 18px;
+    padding: 3px;
+    animation-name: boom;
+}
+@keyframes boom {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 13px;
+    }
+   }
+.logowrap {
+    max-width: 20vmax;
+    max-height: 60px;
+    background-color: rgba(13, 7, 34, 0.5);
+    animation-name: boom;
+}
+/* logo animation ends*/
+/* navigation bar styling*/
+ #navy {
+    overflow: hidden;
+    background-color: rgb(250, 246, 246);
+ }
+
+.navstyle {
+  /* background-color: rgba(25, 5, 95, 0.5); */
+    height: 32px;
+    margin: 0;
+    padding-top: 10px;
+}
+ul {
+    float: right;  
+    list-style-type: none;
+    font-family: 'David Libre', serif;
+    margin-top: 10px;
+    
+}
+ul li {
+    display: inline-block;
+    
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.3) ;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    animation-name: navboom;
+    animation-duration: 1s;
+}
+@keyframes navboom {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ul li a:hover {
+    background-color: rgba(255,255,255,0.1) ;
+    border: 1px solid transparent;
+    color: white;
+   
+}
+ul li a.active {
+    background-color: #fff ;
+    font-size: 20px;
+    color: #000 ;
+}
+.sticky {
+    position: fixed;
+    left: 67.7%;
+    width: 100%;
+  }
+  .sticky1 {
+    position: fixed;
+    left: 0%;
+    width: 100%;
+  }
+/* nav bar styling ends*
+/* start footer styling*/
+.footerbody {
+    background-color: #01162b;
+    height: 300px;
+    width: 100%;
+        display: inline-block;
+}
+.footerbody a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.footertopic {
+    position: relative;
+    margin-left: 120px;
+    top: 30px;
+    display: inline-block;
+}
+.disclaimer {
+    position: absolute;
+    margin-left: 70vh;
+    margin-top: 20px;
+
+}
+.creators {
+   position: relative;
+    margin-left: 50vw;
+    margin-top: 0px;
+    text-align: left
+}
+#creatortitle {
+    text-align: center;
+
+}
+#percpfp {
+    flex-wrap: wrap;
+    height: 100px;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+.creatorname {
+    display: inline-block;
+    vertical-align: auto;
+}
